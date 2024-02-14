@@ -12,10 +12,11 @@ function App() {
     setCount(count + 1);
   }
 
-
   return (
     <div>
-      <button onClick={decrement}>-</button>
+      <button onClick={decrement} 
+      style = {{backgroundColor: "red"}}
+      disabled = {count ===0 ? true : false}>-</button>
 
       <span>{count}</span>
 
